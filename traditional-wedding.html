@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nizhal Studio | Traditional Weddings</title>
+<meta name="description" content="Nizhal Studio Traditional Weddings — a collection of authentic wedding moments, rituals and family memories.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+body.traditional-page{background:#f7f0e4;color:#2b2118}
+.traditional-page-header{position:relative;background:#17120d;padding:145px 0 85px}
+.traditional-page-header .back-link{display:inline-block;margin-bottom:35px;color:#e9bb67;font-size:10px;letter-spacing:1.8px}
+.traditional-page-header h1{font-size:clamp(60px,8vw,105px);line-height:.82;margin:0}
+.traditional-page-header p:not(.eyebrow){max-width:700px;line-height:1.8;color:#cfc2b0;margin-top:28px}
+.traditional-page-gallery{padding:90px 0 120px}
+.traditional-page-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.traditional-page-item{border:0;padding:0;background:#241b13;position:relative;overflow:hidden;cursor:pointer;min-height:360px}
+.traditional-page-item:nth-child(3n){min-height:460px}
+.traditional-page-item img{width:100%;height:100%;min-height:360px;object-fit:cover;display:block;transition:transform .6s ease,filter .6s ease}
+.traditional-page-item:nth-child(3n) img{min-height:460px}
+.traditional-page-item:hover img{transform:scale(1.045);filter:brightness(.88)}
+.traditional-page-item:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#000a);pointer-events:none}
+.traditional-page-item span{position:absolute;z-index:2;left:18px;bottom:16px;color:#fff;font-family:"Cormorant Garamond",Georgia,serif;font-size:24px}
+.traditional-page-item:focus-visible{outline:2px solid #c8923f;outline-offset:3px}
+.gallery-back{display:flex;justify-content:center;margin-top:55px}
+@media(max-width:900px){.traditional-page-grid{grid-template-columns:repeat(2,1fr)}.traditional-page-item,.traditional-page-item:nth-child(3n),.traditional-page-item img,.traditional-page-item:nth-child(3n) img{min-height:320px}}
+@media(max-width:560px){.traditional-page-header{padding:120px 0 65px}.traditional-page-grid{grid-template-columns:1fr}.traditional-page-item,.traditional-page-item:nth-child(3n),.traditional-page-item img,.traditional-page-item:nth-child(3n) img{min-height:420px}.traditional-page-gallery{padding:65px 0 90px}}
+</style>
+</head>
+<body class="traditional-page">
+<header class="site-header" id="top">
+  <a class="brand" href="index.html#home" aria-label="Nizhal Studio home">
+    <span class="brand-mark"><img src="assets/nizhal-logo.png" alt="Nizhal Studio Logo"></span>
+    <span><b>NIZHAL</b><small>STUDIO</small></span>
+  </a>
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="main-nav">
+    <a href="index.html#home">HOME</a>
+    <a href="index.html#portfolio">PORTFOLIO</a>
+    <a href="index.html#weddings">GALLERY</a>
+    <a href="index.html#reviews">TESTIMONIALS</a>
+    <a href="index.html#services">SERVICES</a>
+    <a href="index.html#about">ABOUT</a>
+    <a href="index.html#book">CONTACT</a>
+    <a class="nav-social nav-instagram" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.7" r="1.1" fill="currentColor"/></svg><span>INSTAGRAM</span>
+    </a>
+    <a class="nav-social nav-whatsapp" href="#book" aria-label="WhatsApp Us">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2a8.8 8.8 0 0 0-7.55 13.33L3.3 21l4.62-1.1A8.8 8.8 0 1 0 12 3.2Z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M8.3 8.2c.2-.45.45-.48.78-.49h.52c.18 0 .38.07.48.34l.7 1.7c.1.24.08.43-.06.62l-.55.7c-.13.16-.18.34-.07.55.22.42.78 1.3 1.7 2.1.73.64 1.55 1.05 2.02 1.25.23.1.4.07.55-.1l.72-.83c.16-.18.33-.2.56-.1l1.58.75c.24.12.38.23.39.42.02.3-.08 1.08-.48 1.35-.35.24-.9.4-1.45.29-.55-.1-1.9-.68-3.2-1.7-1.02-.8-1.78-1.8-2.27-2.45-.5-.66-1.1-1.7-1.1-2.65 0-.95.48-1.45.86-1.75Z" fill="currentColor"/></svg><span>WHATSAPP</span>
+    </a>
+  </nav>
+</header>
+<main>
+<section class="traditional-page-header">
+  <div class="container">
+    <a class="back-link" href="index.html#weddings">← BACK TO WEDDINGS</a>
+    <p class="eyebrow">TRADITIONAL WEDDINGS</p>
+    <h1>Traditional <em>Weddings.</em></h1>
+    <p>A collection of authentic wedding moments, portraits, rituals and family memories — captured with care by Nizhal Studio.</p>
+  </div>
+</section>
+<section class="traditional-page-gallery">
+  <div class="container">
+    <div class="traditional-page-grid">
+      <button class="traditional-page-item" type="button" data-full="assets/images/traditional-weddings/01.jpg" aria-label="Open Traditional Wedding photograph 1"><img src="assets/images/traditional-weddings/01.jpg" alt="Nizhal Studio Traditional Wedding 1" loading="lazy"><span>01</span></button>
+      <button class="traditional-page-item" type="button" data-full="assets/images/traditional-weddings/02.jpg" aria-label="Open Traditional Wedding photograph 2"><img src="assets/images/traditional-weddings/02.jpg" alt="Nizhal Studio Traditional Wedding 2" loading="lazy"><span>02</span></button>
+      <button class="traditional-page-item" type="button" data-full="assets/images/traditional-weddings/03.jpg" aria-label="Open Traditional Wedding photograph 3"><img src="assets/images/traditional-weddings/03.jpg" alt="Nizhal Studio Traditional Wedding 3" loading="lazy"><span>03</span></button>
+      <button class="traditional-page-item" type="button" data-full="assets/images/traditional-weddings/04.jpg" aria-label="Open Traditional Wedding photograph 4"><img src="assets/images/traditional-weddings/04.jpg" alt="Nizhal Studio Traditional Wedding 4" loading="lazy"><span>04</span></button>
+      <button class="traditional-page-item" type="button" data-full="assets/images/traditional-weddings/05.jpg" aria-label="Open Traditional Wedding photograph 5"><img src="assets/images/traditional-weddings/05.jpg" alt="Nizhal Studio Traditional Wedding 5" loading="lazy"><span>05</span></button>
+      <button class="traditional-page-item" type="button" data-full="assets/images/traditional-weddings/06.jpg" aria-label="Open Traditional Wedding photograph 6"><img src="assets/images/traditional-weddings/06.jpg" alt="Nizhal Studio Traditional Wedding 6" loading="lazy"><span>06</span></button>
+      <button class="traditional-page-item" type="button" data-full="assets/images/traditional-weddings/07.jpg" aria-label="Open Traditional Wedding photograph 7"><img src="assets/images/traditional-weddings/07.jpg" alt="Nizhal Studio Traditional Wedding 7" loading="lazy"><span>07</span></button>
+      <button class="traditional-page-item" type="button" data-full="assets/images/traditional-weddings/08.jpg" aria-label="Open Traditional Wedding photograph 8"><img src="assets/images/traditional-weddings/08.jpg" alt="Nizhal Studio Traditional Wedding 8" loading="lazy"><span>08</span></button>
+      <button class="traditional-page-item" type="button" data-full="assets/images/traditional-weddings/09.jpg" aria-label="Open Traditional Wedding photograph 9"><img src="assets/images/traditional-weddings/09.jpg" alt="Nizhal Studio Traditional Wedding 9" loading="lazy"><span>09</span></button>
+      <button class="traditional-page-item" type="button" data-full="assets/images/traditional-weddings/10.jpg" aria-label="Open Traditional Wedding photograph 10"><img src="assets/images/traditional-weddings/10.jpg" alt="Nizhal Studio Traditional Wedding 10" loading="lazy"><span>10</span></button>
+      <button class="traditional-page-item" type="button" data-full="assets/images/traditional-weddings/11.jpg" aria-label="Open Traditional Wedding photograph 11"><img src="assets/images/traditional-weddings/11.jpg" alt="Nizhal Studio Traditional Wedding 11" loading="lazy"><span>11</span></button>
+      <button class="traditional-page-item" type="button" data-full="assets/images/traditional-weddings/12.jpg" aria-label="Open Traditional Wedding photograph 12"><img src="assets/images/traditional-weddings/12.jpg" alt="Nizhal Studio Traditional Wedding 12" loading="lazy"><span>12</span></button>
+      <button class="traditional-page-item" type="button" data-full="assets/images/traditional-weddings/13.jpg" aria-label="Open Traditional Wedding photograph 13"><img src="assets/images/traditional-weddings/13.jpg" alt="Nizhal Studio Traditional Wedding 13" loading="lazy"><span>13</span></button>
+      <button class="traditional-page-item" type="button" data-full="assets/images/traditional-weddings/14.jpg" aria-label="Open Traditional Wedding photograph 14"><img src="assets/images/traditional-weddings/14.jpg" alt="Nizhal Studio Traditional Wedding 14" loading="lazy"><span>14</span></button>
+    </div>
+    <div class="gallery-back"><a class="btn btn-gold" href="index.html#weddings">BACK TO WEDDINGS</a></div>
+  </div>
+</section>
+</main>
+<script>
+const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('.main-nav');
+toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open)});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+const items=[...document.querySelectorAll('.traditional-page-item')];
+const box=document.createElement('div');box.className='traditional-lightbox';box.innerHTML='<button class="traditional-lightbox-close" aria-label="Close">×</button><button class="traditional-lightbox-prev" aria-label="Previous">‹</button><img alt="Traditional Wedding photograph"><button class="traditional-lightbox-next" aria-label="Next">›</button><div class="traditional-lightbox-count"></div>';document.body.appendChild(box);
+const img=box.querySelector('img'),count=box.querySelector('.traditional-lightbox-count');let current=0;
+function show(i){current=(i+items.length)%items.length;img.src=items[current].dataset.full;count.textContent=(current+1)+' / '+items.length;box.classList.add('open');document.body.style.overflow='hidden'}
+function close(){box.classList.remove('open');document.body.style.overflow=''}
+items.forEach((item,i)=>item.addEventListener('click',()=>show(i)));
+box.querySelector('.traditional-lightbox-close').onclick=close;box.querySelector('.traditional-lightbox-prev').onclick=()=>show(current-1);box.querySelector('.traditional-lightbox-next').onclick=()=>show(current+1);
+box.addEventListener('click',e=>{if(e.target===box)close()});document.addEventListener('keydown',e=>{if(e.key==='Escape')close();if(!box.classList.contains('open'))return;if(e.key==='ArrowLeft')show(current-1);if(e.key==='ArrowRight')show(current+1)});
+</script>
+</body>
+</html>

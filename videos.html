@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Cinematic Videos | Nizhal Studio</title>
+
+<meta name="description"
+content="Cinematic wedding films and visual stories by Nizhal Studio.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* =========================================
+   VIDEOS PAGE
+========================================= */
+
+.videos-page {
+    background: #17120d;
+    color: #f7f0e4;
+    min-height: 100vh;
+    padding: 135px 0 90px;
+}
+
+/* Main content width */
+.videos-page .container {
+    width: min(1180px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.videos-hero {
+    max-width: 780px;
+    margin: 0 auto 65px;
+}
+
+.videos-back {
+    display: inline-block;
+    margin-bottom: 28px;
+    color: #d9a953;
+    text-decoration: none;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.videos-back:hover {
+    color: #f0c875;
+}
+
+.videos-hero .eyebrow {
+    margin: 0 0 12px;
+    color: #d9a953;
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.videos-hero h1 {
+    margin: 0 0 20px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(52px, 7vw, 78px);
+    line-height: .95;
+    font-weight: 600;
+}
+
+.videos-hero h1 em {
+    color: #e9bb67;
+    font-style: italic;
+}
+
+.videos-hero > p:last-child {
+    max-width: 650px;
+    margin: 0;
+    color: #cfc2b0;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* =========================================
+   VIDEO GRID
+========================================= */
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+    width: 100%;
+}
+
+/* =========================================
+   VIDEO CARD
+========================================= */
+
+.video-page-card {
+    width: 100%;
+    min-width: 0;
+    border: 1px solid #6f4d27;
+    background: #0e0b08;
+    overflow: hidden;
+}
+
+/* Every video same size */
+.video-page-media {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #080604;
+    overflow: hidden;
+}
+
+.video-page-media video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* =========================================
+   VIDEO INFORMATION
+========================================= */
+
+.video-page-info {
+    padding: 20px 22px 22px;
+}
+
+.video-page-number {
+    display: block;
+    margin-bottom: 5px;
+    color: #d9a953;
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+.video-page-info h2 {
+    margin: 0 0 5px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.video-page-info p {
+    margin: 0;
+    color: #a9957a;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+    .videos-page {
+        padding: 120px 0 70px;
+    }
+
+    .videos-page .container {
+        width: min(100% - 36px, 700px);
+    }
+
+    .videos-grid {
+        gap: 24px;
+    }
+
+    .video-page-info h2 {
+        font-size: 29px;
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .videos-page {
+        padding: 105px 0 60px;
+    }
+
+    .videos-page .container {
+        width: calc(100% - 28px);
+    }
+
+    .videos-hero {
+        margin-bottom: 42px;
+    }
+
+    .videos-hero h1 {
+        font-size: 54px;
+    }
+
+    .videos-hero > p:last-child {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* One card per row */
+    .videos-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .video-page-media {
+        aspect-ratio: 16 / 9;
+    }
+
+    .video-page-info {
+        padding: 17px 18px 19px;
+    }
+
+    .video-page-info h2 {
+        font-size: 28px;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .videos-page .container {
+        width: calc(100% - 22px);
+    }
+
+    .videos-hero h1 {
+        font-size: 47px;
+    }
+
+    .videos-grid {
+        gap: 18px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="site-header" id="top">
+
+    <a class="brand" href="index.html#home" aria-label="Nizhal Studio home">
+
+        <span class="brand-mark">
+            <img src="assets/nizhal-logo.png"
+                 alt="Nizhal Studio Logo">
+        </span>
+
+        <span>
+            <b>NIZHAL</b>
+            <small>STUDIO</small>
+        </span>
+
+    </a>
+
+    <button
+        class="menu-toggle"
+        aria-label="Open menu"
+        aria-expanded="false">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+    <nav class="main-nav">
+
+        <a href="index.html#home">HOME</a>
+
+        <a href="index.html#portfolio">PORTFOLIO</a>
+
+        <a href="index.html#weddings">GALLERY</a>
+
+        <a href="videos.html">VIDEOS</a>
+
+        <a href="index.html#reviews">TESTIMONIALS</a>
+
+        <a href="index.html#services">SERVICES</a>
+
+        <a href="index.html#about">ABOUT</a>
+
+        <a href="index.html#book">CONTACT</a>
+
+        <a
+            class="nav-social nav-instagram"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram">
+
+            <span>INSTAGRAM</span>
+
+        </a>
+
+        <a
+            class="nav-social nav-whatsapp"
+            href="index.html#book"
+            aria-label="WhatsApp Us">
+
+            <span>WHATSAPP</span>
+
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="videos-page">
+
+<div class="container">
+
+    <!-- HERO -->
+
+    <section class="videos-hero">
+
+        <a class="videos-back"
+           href="index.html#videos">
+
+            ← Back to Home
+
+        </a>
+
+        <p class="eyebrow">
+            MOTION · EMOTION · STORY
+        </p>
+
+        <h1>
+            Cinematic <em>Stories</em>
+        </h1>
+
+        <p>
+            Wedding films crafted to bring the atmosphere,
+            emotion and details of your celebration back to life.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================
+         FOUR VIDEOS
+    ====================================== -->
+
+    <section class="videos-grid">
+
+
+        <!-- VIDEO 01 -->
+
+        <article class="video-page-card">
+
+            <div class="video-page-media">
+
+                <video
+                    controls
+                    playsinline
+                    preload="metadata">
+
+                    <source
+                        src="assets/videos/video-01.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support video playback.
+
+                </video>
+
+            </div>
+
+            <div class="video-page-info">
+
+                <span class="video-page-number">
+                    01
+                </span>
+
+                <h2>
+                    Wedding Film
+                </h2>
+
+                <p>
+                    Emotion · Celebration · Story
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- VIDEO 02 -->
+
+        <article class="video-page-card">
+
+            <div class="video-page-media">
+
+                <video
+                    controls
+                    playsinline
+                    preload="metadata">
+
+                    <source
+                        src="assets/videos/video-02.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support video playback.
+
+                </video>
+
+            </div>
+
+            <div class="video-page-info">
+
+                <span class="video-page-number">
+                    02
+                </span>
+
+                <h2>
+                    Wedding Memories
+                </h2>
+
+                <p>
+                    People · Rituals · Details
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- VIDEO 03 -->
+
+        <article class="video-page-card">
+
+            <div class="video-page-media">
+
+                <video
+                    controls
+                    playsinline
+                    preload="metadata">
+
+                    <source
+                        src="assets/videos/video-03.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support video playback.
+
+                </video>
+
+            </div>
+
+            <div class="video-page-info">
+
+                <span class="video-page-number">
+                    03
+                </span>
+
+                <h2>
+                    Love Story
+                </h2>
+
+                <p>
+                    Love · Connection · Moments
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- VIDEO 04 -->
+
+        <article class="video-page-card">
+
+            <div class="video-page-media">
+
+                <video
+                    controls
+                    playsinline
+                    preload="metadata">
+
+                    <source
+                        src="assets/videos/video-04.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support video playback.
+
+                </video>
+
+            </div>
+
+            <div class="video-page-info">
+
+                <span class="video-page-number">
+                    04
+                </span>
+
+                <h2>
+                    Celebration Film
+                </h2>
+
+                <p>
+                    Joy · Family · Memories
+                </p>
+
+            </div>
+
+        </article>
+
+
+    </section>
+
+</div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
