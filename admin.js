@@ -64,7 +64,11 @@ $("#replacementFile").onchange=e=>{
   const f=e.target.files?.[0],t=state.selected;if(!f||!t)return;
   if(f.name!==t.name){$("#fileValidation").textContent="Filename mismatch. Required: "+t.name;$("#confirmReplace").disabled=true;return}
   if(!f.type.startsWith("image/")){$("#fileValidation").textContent="Please choose an image.";$("#confirmReplace").disabled=true;return}
-  if(f.size>10*1024*1024){$("#fileValidation").textContent="Image must be 10 MB or smaller.";$("#confirmReplace").disabled=true;return}
+  if(f.size>3*1024*1024){
+  $("#fileValidation").textContent="Image must be 3 MB or smaller.";
+  $("#confirmReplace").disabled=true;
+  return;
+}
   $("#fileValidation").textContent="Filename verified ✓";$("#fileValidation").style.color="#6fc68a";$("#selectedFileText").textContent=f.name;$("#confirmReplace").disabled=false;
 };
 
