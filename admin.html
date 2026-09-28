@@ -1,333 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Nizhal Studio | Admin Portal</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #111;
-            color: #fff;
-            min-height: 100vh;
-        }
-
-        .admin-container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 40px 25px;
-        }
-
-        .admin-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-bottom: 25px;
-            border-bottom: 1px solid #333;
-            margin-bottom: 35px;
-        }
-
-        .admin-header h1 {
-            font-size: 28px;
-        }
-
-        .admin-header span {
-            color: #d6a84f;
-        }
-
-        .back-btn {
-            color: #fff;
-            text-decoration: none;
-            border: 1px solid #555;
-            padding: 10px 18px;
-        }
-
-        .section {
-            margin-bottom: 40px;
-        }
-
-        .section h2 {
-            color: #d6a84f;
-            margin-bottom: 20px;
-        }
-
-        .admin-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .admin-card {
-            background: #1b1b1b;
-            border: 1px solid #333;
-            padding: 25px;
-        }
-
-        .admin-card h3 {
-            margin-bottom: 10px;
-        }
-
-        .admin-card p {
-            color: #aaa;
-            font-size: 14px;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-
-        .admin-card input {
-            width: 100%;
-            margin-bottom: 15px;
-            padding: 12px;
-            background: #111;
-            color: #fff;
-            border: 1px solid #444;
-        }
-
-        .upload-btn {
-            display: inline-block;
-            background: #d6a84f;
-            color: #111;
-            padding: 11px 18px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .upload-btn input {
-            display: none;
-        }
-
-        @media (max-width: 800px) {
-            .admin-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .admin-header {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 20px;
-            }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Nizhal Studio — Admin Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css">
 </head>
-
 <body>
-
-<div class="admin-container">
-
-    <div class="admin-header">
-        <h1>NIZHAL <span>STUDIO</span> — ADMIN</h1>
-
-        <a href="index.html" class="back-btn">
-            ← Back to Website
-        </a>
-    </div>
-
-
-    <!-- MAIN HERO -->
-    <div class="section">
-
-        <h2>Main Website</h2>
-
-        <div class="admin-grid">
-
-            <div class="admin-card">
-                <h3>Hero Image 01</h3>
-                <p>Change the first main website image.</p>
-
-                <label class="upload-btn">
-                    Choose Image
-                    <input type="file" accept="image/*">
-                </label>
-            </div>
-
-            <div class="admin-card">
-                <h3>Hero Image 02</h3>
-                <p>Change the second main website image.</p>
-
-                <label class="upload-btn">
-                    Choose Image
-                    <input type="file" accept="image/*">
-                </label>
-            </div>
-
-            <div class="admin-card">
-                <h3>Hero Image 03</h3>
-                <p>Change the third main website image.</p>
-
-                <label class="upload-btn">
-                    Choose Image
-                    <input type="file" accept="image/*">
-                </label>
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- WEDDING -->
-    <div class="section">
-
-        <h2>Wedding Photography</h2>
-
-        <div class="admin-grid">
-
-            <div class="admin-card">
-                <h3>Wedding Images</h3>
-                <p>Manage wedding photography images.</p>
-
-                <label class="upload-btn">
-                    Choose Images
-                    <input type="file" accept="image/*" multiple>
-                </label>
-            </div>
-
-            <div class="admin-card">
-                <h3>Wedding Videos</h3>
-                <p>Manage wedding videos.</p>
-
-                <label class="upload-btn">
-                    Choose Videos
-                    <input type="file" accept="video/*" multiple>
-                </label>
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- RECEPTION -->
-    <div class="section">
-
-        <h2>Reception Photography</h2>
-
-        <div class="admin-grid">
-
-            <div class="admin-card">
-                <h3>Reception Images</h3>
-
-                <label class="upload-btn">
-                    Choose Images
-                    <input type="file" accept="image/*" multiple>
-                </label>
-            </div>
-
-            <div class="admin-card">
-                <h3>Reception Videos</h3>
-
-                <label class="upload-btn">
-                    Choose Videos
-                    <input type="file" accept="video/*" multiple>
-                </label>
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- PRE WEDDING -->
-    <div class="section">
-
-        <h2>Pre-Wedding Photography</h2>
-
-        <div class="admin-grid">
-
-            <div class="admin-card">
-                <h3>Pre-Wedding Images</h3>
-
-                <label class="upload-btn">
-                    Choose Images
-                    <input type="file" accept="image/*" multiple>
-                </label>
-            </div>
-
-            <div class="admin-card">
-                <h3>Pre-Wedding Videos</h3>
-
-                <label class="upload-btn">
-                    Choose Videos
-                    <input type="file" accept="video/*" multiple>
-                </label>
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- POST WEDDING -->
-    <div class="section">
-
-        <h2>Post-Wedding Photography</h2>
-
-        <div class="admin-grid">
-
-            <div class="admin-card">
-                <h3>Post-Wedding Images</h3>
-
-                <label class="upload-btn">
-                    Choose Images
-                    <input type="file" accept="image/*" multiple>
-                </label>
-            </div>
-
-            <div class="admin-card">
-                <h3>Post-Wedding Videos</h3>
-
-                <label class="upload-btn">
-                    Choose Videos
-                    <input type="file" accept="video/*" multiple>
-                </label>
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- OTHER SECTIONS -->
-    <div class="section">
-
-        <h2>Other Photography</h2>
-
-        <div class="admin-grid">
-
-            <div class="admin-card">
-                <h3>Baby Shoot</h3>
-
-                <label class="upload-btn">
-                    Choose Images
-                    <input type="file" accept="image/*" multiple>
-                </label>
-            </div>
-
-            <div class="admin-card">
-                <h3>Maternity</h3>
-
-                <label class="upload-btn">
-                    Choose Images
-                    <input type="file" accept="image/*" multiple>
-                </label>
-            </div>
-
-            <div class="admin-card">
-                <h3>Resort Photography</h3>
-
-                <label class="upload-btn">
-                    Choose Images
-                    <input type="file" accept="image/*" multiple>
-                </label>
-            </div>
-
-        </div>
-    </div>
-
+<div id="loginView" class="login-view">
+  <div class="login-card">
+    <div class="login-brand"><div class="logo-mark">n</div><div><strong>NIZHAL</strong><span>MODELING STUDIO</span></div></div>
+    <div class="login-copy"><p class="kicker">PRIVATE AREA</p><h1>Studio <em>Admin</em></h1><p>Manage your photography media from one place.</p></div>
+    <form id="loginForm" class="login-form">
+      <label>USERNAME<input id="username" type="text" autocomplete="username" required></label>
+      <label>PASSWORD<input id="password" type="password" autocomplete="current-password" required></label>
+      <button type="submit" class="primary-btn">SIGN IN →</button>
+      <p id="loginError" class="form-error"></p>
+    </form>
+    <a class="back-site" href="index.html">← Back to website</a>
+  </div>
 </div>
 
+<div id="appView" class="app hidden">
+  <aside class="sidebar">
+    <div class="side-brand"><div class="logo-mark">n</div><div><strong>NIZHAL</strong><span>ADMIN PORTAL</span></div></div>
+    <nav>
+      <button class="side-link active" data-view="dashboard">⌂ <span>Dashboard</span></button>
+      <button class="side-link" data-view="images">▧ <span>Images</span></button>
+      <button class="side-link" data-view="videos">▶ <span>Videos</span></button>
+    </nav>
+    <div class="side-bottom"><a href="index.html">↗ View Website</a><button id="logoutBtn">↪ Logout</button></div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div><p class="kicker">NIZHAL STUDIO</p><h2 id="pageTitle">Dashboard</h2></div>
+      <div class="top-actions"><button id="refreshBtn" class="ghost-btn">↻ Refresh</button><span class="status-dot">● LIVE</span></div>
+    </header>
+
+    <section id="dashboardView">
+      <div class="hero-banner"><div><p class="kicker">MEDIA CONTROL CENTER</p><h1>Your studio,<br><em>your story.</em></h1><p>Preview every category and replace live images while keeping the exact filename.</p></div><div class="banner-note"><strong>FILENAME LOCK</strong><span>The replacement filename must exactly match the existing filename.</span></div></div>
+      <div class="stats" id="stats"></div>
+      <div class="section-heading"><div><p class="kicker">QUICK ACCESS</p><h3>Media sections</h3></div></div>
+      <div id="categoryOverview" class="overview-grid"></div>
+    </section>
+
+    <section id="mediaView" class="hidden">
+      <div class="media-toolbar"><div id="categoryTabs" class="tabs"></div><input id="searchInput" class="search" type="search" placeholder="Search filename..."></div>
+      <div class="rule-card"><div class="rule-icon">!</div><div><strong>Replacement rule</strong><span>New file name must be <b>exactly identical</b> to the existing file name.</span></div></div>
+      <div id="mediaGrid" class="media-grid"></div>
+      <div id="emptyState" class="empty hidden">No media found.</div>
+    </section>
+  </main>
+</div>
+
+<div id="replaceModal" class="modal hidden">
+  <div class="modal-backdrop"></div>
+  <div class="modal-card">
+    <button id="closeModal" class="modal-close">×</button>
+    <p class="kicker">REPLACE IMAGE</p><h2 id="modalTitle">Replace image</h2>
+    <div class="replace-preview" id="replacePreview"></div>
+    <div class="file-rule"><span>REQUIRED FILENAME</span><strong id="requiredFilename"></strong></div>
+    <label class="file-picker"><span id="selectedFileText">Choose replacement image</span><input id="replacementFile" type="file" accept="image/*"></label>
+    <p id="fileValidation" class="form-error"></p>
+    <div class="modal-actions"><button id="cancelReplace" class="ghost-btn">Cancel</button><button id="confirmReplace" class="primary-btn" disabled>REPLACE IMAGE</button></div>
+  </div>
+</div>
+
+<div id="toast" class="toast"></div>
+<script src="admin.js"></script>
 </body>
 </html>
