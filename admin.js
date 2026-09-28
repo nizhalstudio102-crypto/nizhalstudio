@@ -9,7 +9,43 @@ function toast(message){
 async function api(url,options={}){
   const r=await fetch(url,{credentials:"same-origin",...options,headers:{"Content-Type":"application/json",...(options.headers||{})}});
   let d={};try{d=await r.json()}catch{}
-  if(!r.ok){const e=new Error(d.error||"Request failed");e.status=r.status;throw e}
+  async function api(url, options = {}) {
+  const r = await fetch(url, {
+    credentials: "same-origin",
+    ...options,
+    headers: {
+      "Content-Type": "application/json",
+      ...(options.headers || {})
+    }
+  });
+
+  let d = {};
+
+  try {
+    d = await r.json();
+  } catch {
+    d = {};
+  }
+
+  if (!r.ok) {
+    let message = d.error || "";
+
+    if (r.status === 413) {
+      message =
+        "Image upload is too large for Vercel. Please use an image below 3 MB.";
+    }
+
+    if (!message) {
+      message = `Request failed (${r.status})`;
+    }
+
+    const e = new Error(message);
+    e.status = r.status;
+    throw e;
+  }
+
+  return d;
+}
   return d;
 }
 
