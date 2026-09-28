@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nizhal Studio | Admin Portal</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        .admin-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 25px;
+        }
+
+        .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #333;
+            margin-bottom: 35px;
+        }
+
+        .admin-header h1 {
+            font-size: 28px;
+        }
+
+        .admin-header span {
+            color: #d6a84f;
+        }
+
+        .back-btn {
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #555;
+            padding: 10px 18px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #d6a84f;
+            margin-bottom: 20px;
+        }
+
+        .admin-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .admin-card {
+            background: #1b1b1b;
+            border: 1px solid #333;
+            padding: 25px;
+        }
+
+        .admin-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .admin-card p {
+            color: #aaa;
+            font-size: 14px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .admin-card input {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 12px;
+            background: #111;
+            color: #fff;
+            border: 1px solid #444;
+        }
+
+        .upload-btn {
+            display: inline-block;
+            background: #d6a84f;
+            color: #111;
+            padding: 11px 18px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .upload-btn input {
+            display: none;
+        }
+
+        @media (max-width: 800px) {
+            .admin-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .admin-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="admin-container">
+
+    <div class="admin-header">
+        <h1>NIZHAL <span>STUDIO</span> — ADMIN</h1>
+
+        <a href="index.html" class="back-btn">
+            ← Back to Website
+        </a>
+    </div>
+
+
+    <!-- MAIN HERO -->
+    <div class="section">
+
+        <h2>Main Website</h2>
+
+        <div class="admin-grid">
+
+            <div class="admin-card">
+                <h3>Hero Image 01</h3>
+                <p>Change the first main website image.</p>
+
+                <label class="upload-btn">
+                    Choose Image
+                    <input type="file" accept="image/*">
+                </label>
+            </div>
+
+            <div class="admin-card">
+                <h3>Hero Image 02</h3>
+                <p>Change the second main website image.</p>
+
+                <label class="upload-btn">
+                    Choose Image
+                    <input type="file" accept="image/*">
+                </label>
+            </div>
+
+            <div class="admin-card">
+                <h3>Hero Image 03</h3>
+                <p>Change the third main website image.</p>
+
+                <label class="upload-btn">
+                    Choose Image
+                    <input type="file" accept="image/*">
+                </label>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- WEDDING -->
+    <div class="section">
+
+        <h2>Wedding Photography</h2>
+
+        <div class="admin-grid">
+
+            <div class="admin-card">
+                <h3>Wedding Images</h3>
+                <p>Manage wedding photography images.</p>
+
+                <label class="upload-btn">
+                    Choose Images
+                    <input type="file" accept="image/*" multiple>
+                </label>
+            </div>
+
+            <div class="admin-card">
+                <h3>Wedding Videos</h3>
+                <p>Manage wedding videos.</p>
+
+                <label class="upload-btn">
+                    Choose Videos
+                    <input type="file" accept="video/*" multiple>
+                </label>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- RECEPTION -->
+    <div class="section">
+
+        <h2>Reception Photography</h2>
+
+        <div class="admin-grid">
+
+            <div class="admin-card">
+                <h3>Reception Images</h3>
+
+                <label class="upload-btn">
+                    Choose Images
+                    <input type="file" accept="image/*" multiple>
+                </label>
+            </div>
+
+            <div class="admin-card">
+                <h3>Reception Videos</h3>
+
+                <label class="upload-btn">
+                    Choose Videos
+                    <input type="file" accept="video/*" multiple>
+                </label>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- PRE WEDDING -->
+    <div class="section">
+
+        <h2>Pre-Wedding Photography</h2>
+
+        <div class="admin-grid">
+
+            <div class="admin-card">
+                <h3>Pre-Wedding Images</h3>
+
+                <label class="upload-btn">
+                    Choose Images
+                    <input type="file" accept="image/*" multiple>
+                </label>
+            </div>
+
+            <div class="admin-card">
+                <h3>Pre-Wedding Videos</h3>
+
+                <label class="upload-btn">
+                    Choose Videos
+                    <input type="file" accept="video/*" multiple>
+                </label>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- POST WEDDING -->
+    <div class="section">
+
+        <h2>Post-Wedding Photography</h2>
+
+        <div class="admin-grid">
+
+            <div class="admin-card">
+                <h3>Post-Wedding Images</h3>
+
+                <label class="upload-btn">
+                    Choose Images
+                    <input type="file" accept="image/*" multiple>
+                </label>
+            </div>
+
+            <div class="admin-card">
+                <h3>Post-Wedding Videos</h3>
+
+                <label class="upload-btn">
+                    Choose Videos
+                    <input type="file" accept="video/*" multiple>
+                </label>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- OTHER SECTIONS -->
+    <div class="section">
+
+        <h2>Other Photography</h2>
+
+        <div class="admin-grid">
+
+            <div class="admin-card">
+                <h3>Baby Shoot</h3>
+
+                <label class="upload-btn">
+                    Choose Images
+                    <input type="file" accept="image/*" multiple>
+                </label>
+            </div>
+
+            <div class="admin-card">
+                <h3>Maternity</h3>
+
+                <label class="upload-btn">
+                    Choose Images
+                    <input type="file" accept="image/*" multiple>
+                </label>
+            </div>
+
+            <div class="admin-card">
+                <h3>Resort Photography</h3>
+
+                <label class="upload-btn">
+                    Choose Images
+                    <input type="file" accept="image/*" multiple>
+                </label>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
