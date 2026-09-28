@@ -1,7 +1,7 @@
 import { requireAdmin } from "../../lib/admin-auth.js";
 import { githubFetch, getTree, repoName, BRANCH } from "../../lib/github.js";
 
-const MAX_IMAGE_SIZE = 10 * 1024 * 1024;
+const MAX_IMAGE_SIZE = 3 * 1024 * 1024;
 
 /**
  * Only allow files inside assets/images/
